@@ -55,8 +55,6 @@ for i in range(17+F):
     for j in range(17+F-i):
         I=i
         J=j+i+1
-        if not [I,J] in A:
-            X.append([I,J,0])
 
 while True:
     for ii in range(1):
