@@ -55,13 +55,14 @@ for i in range(17+F):
     for j in range(17+F-i):
         I=i
         J=j+i+1
+        X.append([I,J,1])
 
 while True:
     for ii in range(1):
         AVG=[]
         for I in range(len(X)):
             AVG.append([])
-        for x in range(200):
+        for x in range(25):
             NM=0
             V=[]
             for i in X:
@@ -101,7 +102,7 @@ while True:
         for i in X:
             i[-1]=sum(AVG[0])/len(AVG[0])/S
             AVG.pop(0)
-    for x in X:
-        if x[-1]>10**-25:
-            print(x)
-    input()
+        for x in X:
+            if x[-1]>10**-25:
+                print(x)
+        input()
